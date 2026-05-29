@@ -1,1 +1,25 @@
 
+.bookFormContainer{
+    padding: 32;
+    margin-top:40px;
+    border:1px solid #DADDE1;
+}
+
+.bookFormText{
+    font-weight: 500;
+    color: #8D929A;
+}
+.bookFormTitle{
+    font-weight: 600;
+    font-size: 20px;
+}
+.bookForm{
+    display: flex;
+    gap: 16px;
+    padding-top: 24px;
+    flex-direction: column;
+}
+.bookFormButton{
+    padding: 12px 58px;
+    align-self: center;
+}

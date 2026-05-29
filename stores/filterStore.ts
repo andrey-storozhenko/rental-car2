@@ -15,17 +15,30 @@ export const useFiltersStore = create<FilterStore>()(
     (set) => ({
         ...defaultFilters,
         actions: {
-            setFilters: (newFilters) => {
-
-            },
             setBrand: (newBrand) => {
                 set({ brand:newBrand });
             },
             setPriceRange: (newPriceRange) => {
-              set({priceRange:newPriceRange})  
+                set({priceRange:newPriceRange})  
             },
             resetFilters: () => {
 
+            },
+            setMileageFrom: (from) => {
+                set((state) => ({
+                    mileageRange: {
+                        ...state.mileageRange,
+                        from:from,
+                    }
+                }));
+            },
+            setMileageTo: (to) => {
+                set((state) => ({
+                    mileageRange: {
+                        ...state.mileageRange,
+                        to:to,
+                    }
+                }));
             },
         }
     })

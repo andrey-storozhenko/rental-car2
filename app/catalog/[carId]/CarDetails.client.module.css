@@ -1,0 +1,15 @@
+.carDetails{
+    display: flex;
+    gap: 72px;
+    margin-top:84px;
+    padding-bottom: 84px;
+}
+.leftColumn{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.rightColumn{
+    flex: 1;
+}

@@ -11,9 +11,10 @@ export interface FilterState{
 }
 
 export interface FilterActions{
-    setFilters: (filters: Partial<FilterState>) => void;
     setBrand: (newBrand: string) => void;
     setPriceRange: (newPriceRange: number) => void;
+    setMileageFrom: (from: number) => void;
+    setMileageTo: (to: number) => void;
     resetFilters: () => void;
 }
 
